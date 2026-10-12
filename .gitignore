@@ -1,2 +1,32 @@
-project1
-output/
+# 构建目录和旧编译产物
+/build/
+/build-*/
+/cmake-build-*/
+/output/
+/project1
+/main
+
+# 目标文件、库和 Windows 可执行文件
+*.o
+*.obj
+*.a
+*.so
+*.so.*
+*.lib
+*.dll
+*.exe
+*.pdb
+
+# 本机编辑器配置和临时文件
+/.vscode/
+/.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# 本机 CMake 配置（共享配置 CMakePresets.json 可以提交）
+CMakeUserPresets.json
+
+.gitignore
